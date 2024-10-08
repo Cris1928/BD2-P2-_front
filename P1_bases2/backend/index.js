@@ -1,11 +1,19 @@
 require('dotenv').config(); // Cargar las variables de entorno desde el archivo .env
 const express = require('express');
 const cassandra = require('cassandra-driver');
+const morgan = require('morgan');
+const cors = require('cors');
+
 
 // Inicializar Express
 const app = express();
 app.use(express.json());
 
+// Configuración de CORS
+app.use(cors());
+
+// Configuración de Morgan
+app.use(morgan('dev'));
 
 // Configuración del cliente de Cassandra 
 const client = new cassandra.Client({
