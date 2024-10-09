@@ -6,6 +6,7 @@ import CuartosFrios from './components/CuartosFrios'
 import DetallesPedido from './components/DetallesPedido'
 import Pedidos from './components/Pedidos'
 import Bodegas from './components/bodegas'
+import Home from './components/Home'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route path='/' element={<Navbar />} />
+          <Route path='/' element={<Home />} />
           <Route path='/clientes' element={<Cliente />} />
           <Route path='/productos' element={<Productos />} />
           <Route path="/cuartosfrios" element={<CuartosFrios />} />
