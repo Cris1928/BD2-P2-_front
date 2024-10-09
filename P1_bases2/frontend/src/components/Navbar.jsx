@@ -10,6 +10,7 @@ const Navbar = ({ isOpen, toggleNavbar }) => {
           <li className="mb-2"><a href="/clientes" className="hover:text-gray-400">Cliente</a></li>
           <li className="mb-2"><a href="/productos" className="hover:text-gray-400">Productos</a></li>
           <li className="mb-2"><a href="/pedidos" className="hover:text-gray-400">Pedidos</a></li>
+          <li className="mb-2"><a href="/bodegas" className="hover:text-gray-400">Bodegas</a></li>
           <li className="mb-2"><a href="/cuartosfrios" className="hover:text-gray-400">Cuartos Frios</a></li>
         </ul>
       </div>

@@ -5,6 +5,7 @@ import Productos from './components/productos'
 import CuartosFrios from './components/CuartosFrios'
 import DetallesPedido from './components/DetallesPedido'
 import Pedidos from './components/Pedidos'
+import Bodegas from './components/bodegas'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/cuartosfrios" element={<CuartosFrios />} />
           <Route path="/detallespedido/:codigo_pedido" element={<DetallesPedido />} />
           <Route path="/pedidos" element={<Pedidos />} />
+          <Route path='/bodegas' element={<Bodegas/>} />
 
         </Routes>
       </BrowserRouter>
